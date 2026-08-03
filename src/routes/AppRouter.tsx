@@ -17,9 +17,10 @@ const AppRouter = () => {
           <Route path="/" element={<Navigate to={'/dashboard'} replace />} />
           <Route path="/dashboard" element={<DashboardPage />} />
         </Route>
+
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
-      <Route path="*" element={<NotFoundPage />} />
 
     </BrowserRouter>
   )

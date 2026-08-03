@@ -1,12 +1,17 @@
+import { Box, Typography } from "@mui/material"
 import { Outlet } from "react-router-dom"
 
 const AppLayout = () => {
   return (
-    <div>
-      <div>AppLayout</div>
+    <Box sx={{ p: 3 }}>
+      <Typography variant="h5" gutterBottom>
+        Enterprise Analytics Dashboard
+      </Typography>
+
       <Outlet />
-    </div>
+
+    </Box>
   )
 }
 
-export default AppLayout
+export default AppLayout;
