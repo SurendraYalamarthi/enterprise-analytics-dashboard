@@ -1,0 +1,28 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import PublicLayout from "../layouts/PublicLayout";
+import AppLayout from "../layouts/AppLayout";
+import DashboardPage from "../pages/DashboardPage";
+import LoginPage from "../pages/LoginPage";
+import NotFoundPage from "../pages/NotFoundPage";
+
+const AppRouter = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<PublicLayout />}>
+          <Route path="/login" element={<LoginPage />} />
+        </Route>
+
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<Navigate to={'/dashboard'} replace />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+        </Route>
+      </Routes>
+
+      <Route path="*" element={<NotFoundPage />} />
+
+    </BrowserRouter>
+  )
+}
+
+export default AppRouter;
