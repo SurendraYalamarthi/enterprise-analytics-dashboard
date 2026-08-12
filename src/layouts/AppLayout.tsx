@@ -1,15 +1,20 @@
-import { Box, Typography } from "@mui/material"
+import { Box } from "@mui/material"
 import { Outlet } from "react-router-dom"
+import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
 
 const AppLayout = () => {
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h5" gutterBottom>
-        Enterprise Analytics Dashboard
-      </Typography>
+    <Box sx={{ display: "flex", flexDirection: "column", height: "100dvh" }}>
+      <Header />
 
-      <Outlet />
+      <Box sx={{ flexGrow: 1, display: "flex" }}>
 
+        <Sidebar />
+        <Box sx={{ p: 3, flexGrow: 1 }}>
+          <Outlet />
+        </Box>
+      </Box>
     </Box>
   )
 }
