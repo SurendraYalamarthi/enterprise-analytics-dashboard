@@ -4,6 +4,7 @@ import AppLayout from "../layouts/AppLayout";
 import DashboardPage from "../pages/DashboardPage";
 import LoginPage from "../pages/LoginPage";
 import NotFoundPage from "../pages/NotFoundPage";
+import ReportsPage from "../pages/ReportsPage";
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
         <Route element={<AppLayout />}>
           <Route path="/" element={<Navigate to={'/dashboard'} replace />} />
           <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/reports" element={<ReportsPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />

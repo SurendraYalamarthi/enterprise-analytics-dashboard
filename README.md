@@ -2,18 +2,18 @@
 
 ## Overview
 
-Enterprise Dashboard is a React + TypeScript dashboard application built with
-Material UI. The project focuses on reusable components, responsive layouts,
-and a feature-based project structure.
+Enterprise Analytics Dashboard is a React + TypeScript analytics application built with Material UI. The project focuses on reusable components, responsive layouts, feature-based architecture, and practical enterprise dashboard functionality.
 
 ## Tech Stack
 
-- React
-- TypeScript
-- Vite
-- Material UI
-- MUI X Charts
-- React Router
+* React
+* TypeScript
+* Vite
+* Material UI
+* MUI X Charts
+* MUI X Date Pickers
+* React Router
+* Day.js
 
 ## Getting Started
 
@@ -24,40 +24,65 @@ npm run dev
 
 ## Current Features
 
-- Responsive application layout
-- Header and sidebar navigation
-- Active navigation state
-- Dashboard page
-- Responsive KPI metric cards
-- Revenue trend chart
-- Mock data for dashboard metrics and revenue
+### Application Layout
+
+* Responsive application shell
+* Header and sidebar navigation
+* Collapsible sidebar
+* Active navigation state
+* Route-based page navigation
+* Responsive layout across screen sizes
+
+### Dashboard
+
+* KPI metric cards
+* Revenue trend visualization
+* Responsive dashboard layout
+* Mock data for dashboard metrics and revenue
+
+### Reports
+
+* Date range filtering
+* Report type filtering
+* Region filtering
+* Status filtering
+* Apply and clear filter actions
+* Loading state
+* Reports summary with total value and status counts
+* Responsive reports table
+* Empty-results state
+* Column sorting
+* Pagination
+* Pagination reset based on applied filter changes
 
 ## Project Structure
 
+```text
 src/
 ├── components/
 ├── constants/
 ├── features/
-│   └── dashboard/
+│   ├── dashboard/
+│   └── reports/
 ├── layout/
 ├── mock/
 ├── pages/
+├── routes/
+├── styles/
 ├── types/
-└── ...
+└── utils/
+```
 
 ## Development Status
 
 ### Completed
 
-- Application layout
-- Sidebar navigation
-- Active navigation state
-- Dashboard KPI cards
-- Revenue trend visualization
+* Phase 1 — Dashboard
+* Phase 2 — Reports
 
-### In Progress
+### Upcoming
 
-- Dashboard section layout and responsive refinement
-- Reports
-- Users
-- Settings
+* Phase 3 — Users
+* Phase 4 — Settings
+* Phase 5 — Polish & Testing
+* Phase 6 — Documentation & Portfolio Presentation

@@ -1,10 +1,12 @@
 
 import { Card, CardContent, Typography } from "@mui/material";
-import { type DashboardMetric } from '../../types/dashboard';
 
 
 type MetricCardProps = {
-    metric: DashboardMetric;
+    metric: {
+        label: string;
+        value: string | number;
+    };
 }
 
 const MetricCard = ({ metric }: MetricCardProps) => {

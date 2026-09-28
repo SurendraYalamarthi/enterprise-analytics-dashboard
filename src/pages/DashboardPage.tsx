@@ -1,6 +1,6 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import { dashboardMetrics } from '../mock/dashboard';
-import MetricCard from "../features/dashboard/MetricCard";
+import MetricCard from "../components/MetricCard";
 import RevenueChart from "../features/dashboard/RevenueChart";
 
 const DashboardPage = () => {
