@@ -55,16 +55,29 @@ npm run dev
 * Pagination
 * Pagination reset based on applied filter changes
 
+### Users
+
+* User summary metrics for total, active, and inactive users
+* Name/email search with role, department, and status filters
+* Sortable user table with a no-results state
+* Mock user data and loading state
+* User edit action is present; the edit form is not yet implemented
+
+### Settings
+
+* Settings route and placeholder page
+
 ## Project Structure
 
 ```text
 src/
 ├── components/
-├── constants/
 ├── features/
 │   ├── dashboard/
-│   └── reports/
-├── layout/
+│   ├── reports/
+│   └── users/
+├── constants/
+├── layouts/
 ├── mock/
 ├── pages/
 ├── routes/
@@ -82,7 +95,7 @@ src/
 
 ### Upcoming
 
-* Phase 3 — Users
-* Phase 4 — Settings
+* Phase 3 — Complete the user edit workflow
+* Phase 4 — Implement settings
 * Phase 5 — Polish & Testing
 * Phase 6 — Documentation & Portfolio Presentation

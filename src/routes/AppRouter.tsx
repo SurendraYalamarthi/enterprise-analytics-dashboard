@@ -5,6 +5,8 @@ import DashboardPage from "../pages/DashboardPage";
 import LoginPage from "../pages/LoginPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import ReportsPage from "../pages/ReportsPage";
+import UsersPage from "../pages/UsersPage";
+import SettingsPage from "../pages/SettingsPage";
 
 const AppRouter = () => {
   return (
@@ -18,6 +20,8 @@ const AppRouter = () => {
           <Route path="/" element={<Navigate to={'/dashboard'} replace />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/reports" element={<ReportsPage />} />
+          <Route path="/users" element={<UsersPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />
